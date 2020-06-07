@@ -1,4 +1,4 @@
-# NewToMe-React-Native
+# NewToYou-React-Native
 
 Clone of [LetGo], a platform for individuals to buy and sell their used items. Native app for iOS and Android.
 
