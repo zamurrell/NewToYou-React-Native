@@ -4,13 +4,13 @@ Clone of [LetGo], a platform for individuals to buy and sell their used items. N
 
 ### Screenshots
 
+![ListingsScreen](https://i.imgur.com/vJ7g3fU.gif)
+![ListingEditScreen](https://i.imgur.com/I1ON3OV.gif)
 ![WelcomeScreen](https://i.imgur.com/ZJ9yBup.png)
 ![WelcomeScreenAndroid](https://i.imgur.com/MOejsoS.png)
 ![LoginScreen](https://i.imgur.com/72zBX1g.png)
-![ListingsScreen](https://i.imgur.com/fY8bdyo.png)
 ![AccountScreen](https://i.imgur.com/TBhEm14.png)
 ![CreatePostScreen](https://i.imgur.com/m2smnqa.png)
-![ItemScreen](https://i.imgur.com/0PWUeiM.png)
 ![RegisterScreen](https://i.imgur.com/EAkAMEz.png)
 
 ### Tech
@@ -35,4 +35,4 @@ $ npm start
 [react-native]: https://reactnative.dev/
 [node.js]: http://nodejs.org
 [expo]: https://expo.io/
-[LetGo]: https://www.letgo.com/en-us
+[letgo]: https://www.letgo.com/en-us
