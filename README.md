@@ -5,6 +5,7 @@ Clone of [LetGo], a platform for individuals to buy and sell their used items. N
 ### Screenshots
 
 ![ListingsScreen](https://i.imgur.com/vJ7g3fU.gif)
+![MessagesScreen](https://i.imgur.com/v7YR9GR.gif)
 ![ListingEditScreen](https://i.imgur.com/I1ON3OV.gif)
 ![WelcomeScreen](https://i.imgur.com/ZJ9yBup.png)
 ![WelcomeScreenAndroid](https://i.imgur.com/MOejsoS.png)
