@@ -10,8 +10,9 @@ import React from "react";
 
 import colors from "../config/colors";
 import AppButton from "../components/AppButton";
+import routes from "../navigation/routes";
 
-function WelcomeScreen(props) {
+function WelcomeScreen({ navigation }) {
   return (
     <ImageBackground
       blurRadius={10}
@@ -22,8 +23,15 @@ function WelcomeScreen(props) {
         <Image style={styles.logo} source={require("../assets/logo.png")} />
       </View>
       <View style={styles.buttonContainer}>
-        <AppButton title="Login"></AppButton>
-        <AppButton color="secondary" title="Register"></AppButton>
+        <AppButton
+          title="Login"
+          onPress={() => navigation.navigate(routes.LOGIN)}
+        ></AppButton>
+        <AppButton
+          color="secondary"
+          title="Register"
+          onPress={() => navigation.navigate(routes.REGISTER)}
+        ></AppButton>
       </View>
     </ImageBackground>
   );

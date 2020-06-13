@@ -4,6 +4,7 @@ import { StyleSheet, FlatList } from "react-native";
 import Screen from "../components/Screen";
 import Card from "../components/Card";
 import colors from "../config/colors";
+import routes from "../navigation/routes";
 
 const initialListings = [
   {
@@ -25,7 +26,7 @@ const initialListings = [
     image: require("../assets/jacket.jpg"),
   },
 ];
-function ListingsScreen() {
+function ListingsScreen({ navigation }) {
   const [listings, setListings] = useState(initialListings);
   const [refreshing, setRefreshing] = useState(false);
 
@@ -39,6 +40,7 @@ function ListingsScreen() {
             title={item.title}
             subTitle={"$" + item.price}
             image={item.image}
+            onPress={() => navigation.navigate(routes.LISTING_DETAILS, item)}
           />
         )}
         refreshing={refreshing}
