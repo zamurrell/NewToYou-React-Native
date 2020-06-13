@@ -38,6 +38,7 @@ function AccountScreen({ navigation }) {
       <View style={styles.container}>
         <FlatList
           data={menuItems}
+          scrollEnabled={false}
           keyExtractor={(menuItem) => menuItem.title}
           ItemSeparatorComponent={ListItemSeparator}
           renderItem={({ item }) => (

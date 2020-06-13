@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Image, StyleSheet } from "react-native";
+import { View, Image, StyleSheet, Text } from "react-native";
 
 import AppText from "../components/AppText";
 import colors from "../config/colors";
@@ -13,7 +13,7 @@ function ListingDetailsScreen({ route }) {
       <Image style={styles.image} source={listing.image} />
       <View style={styles.detailsContainer}>
         <AppText style={styles.title}>{listing.title}</AppText>
-        <AppText style={styles.price}>{listing.price}</AppText>
+        <AppText style={styles.price}>${listing.price}</AppText>
         <View style={styles.userContainer}>
           <ListItem
             image={require("../assets/zach.jpg")}
@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: "500",
+    color: "black",
   },
   userContainer: {
     marginVertical: 40,
