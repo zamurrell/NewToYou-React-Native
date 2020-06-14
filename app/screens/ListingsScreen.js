@@ -12,6 +12,7 @@ import routes from "../navigation/routes";
 import useApi from "../hooks/useApi";
 
 function ListingsScreen({ navigation }) {
+  const [refreshing, setRefreshing] = useState(false);
   const { data: listings, error, loading, request: loadListings } = useApi(
     listingsApi.getListings
   );
@@ -40,6 +41,8 @@ function ListingsScreen({ navigation }) {
             onPress={() => navigation.navigate(routes.LISTING_DETAILS, item)}
           />
         )}
+        refreshing={refreshing}
+        onRefresh={loadListings}
       />
     </Screen>
   );

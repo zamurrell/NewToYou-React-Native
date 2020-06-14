@@ -3,7 +3,7 @@ import { StyleSheet, Button, Image, Text } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer, useNavigation } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import * as ImagePicker from "expo-image-picker";
+import NetInfo from "@react-native-community/netinfo";
 
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
@@ -22,34 +22,6 @@ import navigationTheme from "./app/navigation/navigationTheme";
 import AppNavigator from "./app/navigation/AppNavigator";
 
 export default function App() {
-  const Tweets = () => (
-    <Screen>
-      <Text>Tweets</Text>
-    </Screen>
-  );
-
-  const TweetDetails = () => (
-    <Screen>
-      <Text>Tweet Details</Text>
-    </Screen>
-  );
-
-  const Tab = createBottomTabNavigator();
-  const TabNavigator = () => (
-    <Tab.Navigator>
-      <Tab.Screen name="Tweets" component={Tweets} />
-      <Tab.Screen name="Tweet Details" component={TweetDetails} />
-    </Tab.Navigator>
-  );
-
-  const Stack = createStackNavigator();
-  const StackNavigator = () => (
-    <Stack.Navigator>
-      <Stack.Screen name="Tweets" component={Tweets} />
-      <Stack.Screen name="Tweet Details" component={TweetDetails} />
-    </Stack.Navigator>
-  );
-
   return (
     <NavigationContainer theme={navigationTheme}>
       <AppNavigator />

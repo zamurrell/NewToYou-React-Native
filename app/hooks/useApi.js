@@ -13,7 +13,7 @@ export default useApi = (apiFunc) => {
     if (!response.ok) return setError(true);
 
     setError(false);
-    setData(response.data);
+    setData(response.data.reverse());
   };
 
   return { data, error, loading, request };
