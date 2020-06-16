@@ -1,11 +1,12 @@
 import React from "react";
 import { StyleSheet, View, FlatList } from "react-native";
 
-import Screen from "../components/Screen";
-import ListItem from "../components/lists/ListItem";
+import { ListItem, ListItemSeparator } from "../components/lists";
 import colors from "../config/colors";
 import Icon from "../components/Icon";
-import ListItemSeparator from "../components/lists/ListItemSeparator";
+import routes from "../navigation/routes";
+import Screen from "../components/Screen";
+import useAuth from "../auth/useAuth";
 
 const menuItems = [
   {
@@ -18,29 +19,31 @@ const menuItems = [
   {
     title: "My Messages",
     icon: {
-      name: "email",
+      name: "cellphone-message",
       backgroundColor: colors.secondary,
     },
-    targetScreen: "Messages",
+    targetScreen: routes.MESSAGES,
   },
 ];
 
 function AccountScreen({ navigation }) {
+  const { user, logOut } = useAuth();
+
   return (
     <Screen style={styles.screen}>
       <View style={styles.container}>
         <ListItem
-          title="Zach Murrell"
-          subTitle="zamurrell@gmail.com"
+          title={user.name}
+          subTitle={user.email}
           image={require("../assets/zach.jpg")}
         />
       </View>
       <View style={styles.container}>
         <FlatList
           data={menuItems}
-          scrollEnabled={false}
           keyExtractor={(menuItem) => menuItem.title}
           ItemSeparatorComponent={ListItemSeparator}
+          scrollEnabled={false}
           renderItem={({ item }) => (
             <ListItem
               title={item.title}
@@ -58,18 +61,18 @@ function AccountScreen({ navigation }) {
       <ListItem
         title="Log Out"
         IconComponent={<Icon name="logout" backgroundColor="#ffe66d" />}
+        onPress={() => logOut()}
       />
     </Screen>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    marginVertical: 20,
-  },
   screen: {
     backgroundColor: colors.lightGray,
-    flex: 1,
+  },
+  container: {
+    marginVertical: 20,
   },
 });
 

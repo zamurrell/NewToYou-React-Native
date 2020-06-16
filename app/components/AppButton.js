@@ -15,7 +15,7 @@ function AppButton({ title, onPress, color = "primary" }) {
 
 const styles = StyleSheet.create({
   button: {
-    height: 70,
+    height: 60,
     width: "100%",
     borderRadius: 35,
     backgroundColor: colors.primary,

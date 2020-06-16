@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default useApi = (apiFunc) => {
+export default useApiFeed = (apiFunc) => {
   const [data, setData] = useState([]);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -11,7 +11,7 @@ export default useApi = (apiFunc) => {
     setLoading(false);
 
     setError(!response.ok);
-    setData(response.data);
+    setData(response.data.reverse());
     return response;
   };
 
