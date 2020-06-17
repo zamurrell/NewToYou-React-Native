@@ -25,6 +25,9 @@
       "supportsTablet": true
     },
     "description": "A marketplace to buy things that are New To You! Clone of LetGo",
-    "githubUrl": "https://github.com/zamurrell/NewToYou-React-Native"
+    "githubUrl": "https://github.com/zamurrell/NewToYou-React-Native",
+    "notification": {
+      "iosDisplayInForeground": true
+    }
   }
 }
