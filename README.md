@@ -23,11 +23,13 @@ Install the dependencies and devDependencies and start the server.
 
 ```sh
 $ npm install
-
+```
 package.json
+```sh
 $ npm start
-
+```
 Node Backend/package.json
+```sh
 $npm start
 ```
 
