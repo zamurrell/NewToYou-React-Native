@@ -23,7 +23,12 @@ Install the dependencies and devDependencies and start the server.
 
 ```sh
 $ npm install
+
+package.json
 $ npm start
+
+Node Backend/package.json
+$npm start
 ```
 
 [react-native]: https://reactnative.dev/
