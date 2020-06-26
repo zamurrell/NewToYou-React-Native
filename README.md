@@ -2,7 +2,7 @@
 
 Clone of [LetGo], a platform for individuals to buy and sell their used items. Native app for iOS and Android.
 
-### Screenshots
+### Screen Recordings
 
 ![Login](https://i.imgur.com/skNK8y3.gif)
 ![Register](https://i.imgur.com/HcmT2HM.gif)
