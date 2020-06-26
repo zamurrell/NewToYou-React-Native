@@ -4,7 +4,7 @@ Clone of [LetGo], a platform for individuals to buy and sell their used items. N
 
 ### Screen Recordings
 
-![Login](https://i.imgur.com/skNK8y3.gif)
+![Login](https://i.imgur.com/EOVruW5.gif)
 ![Register](https://i.imgur.com/HcmT2HM.gif)
 
 ### Tech
