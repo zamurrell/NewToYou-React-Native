@@ -5,7 +5,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@react-native-community/masked-view": "0.1.6",
@@ -35,11 +37,13 @@
     "react-native-screens": "~2.2.0",
     "react-native-web": "~0.11.7",
     "yup": "^0.28.5",
-    "expo-secure-store": "~8.1.0"
+    "expo-secure-store": "~8.1.0",
+    "snyk": "^1.349.0"
   },
   "devDependencies": {
     "babel-preset-expo": "~8.1.0",
     "@babel/core": "^7.8.6"
   },
-  "private": true
+  "private": true,
+  "snyk": true
 }
