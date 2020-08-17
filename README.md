@@ -30,7 +30,7 @@ $ npm start
 ```
 Node Backend/package.json
 ```sh
-$npm start
+$ npm start
 ```
 
 [react-native]: https://reactnative.dev/
